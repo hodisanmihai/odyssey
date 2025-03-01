@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 @import "tailwindcss";
 
 @theme {
@@ -6,14 +9,14 @@
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #0a0a0a;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #0a0a0a;
   }
 }
 
@@ -21,4 +24,258 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.gradient-background {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 12%,
+    rgba(0, 0, 0, 0.3757878151260504) 100%
+  );
+}
+
+.first-font {
+  font-family: Old Standard TT;
+}
+
+.second-font {
+  font-family: "Montserrat";
+}
+
+.text-stroke {
+  -webkit-text-stroke: 2px white;
+}
+
+.text-stroke-black {
+  -webkit-text-stroke: 1px #333;
+}
+
+.strokeCars {
+  filter: drop-shadow(5px 5px 150px rgb(0, 0, 0));
+}
+
+.text-shadow {
+  text-shadow: black 2px 2px 20px;
+}
+
+.example-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.example-2 .icon-content {
+  margin: 0 10px;
+  position: relative;
+}
+
+.example-2 .icon-content .tooltip {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(50%);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 15px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.example-2 .icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: 6px;
+}
+
+.example-2 .icon-content a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4d4d4d;
+  background-color: #ffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.example-2 .icon-content a:hover {
+  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 50%);
+}
+
+.example-2 .icon-content a .fa {
+  position: relative;
+  z-index: 1;
+  font-size: 30px; /* Adjust the icon size */
+}
+
+.example-2 .icon-content a:hover {
+  color: white;
+}
+
+.example-2 .icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+
+.example-2 .icon-content a:hover .filled {
+  height: 100%;
+}
+
+/* Specific social color backgrounds */
+.example-2 .icon-content a[data-social="facebook"] .filled,
+.example-2 .icon-content a[data-social="facebook"] ~ .tooltip {
+  background-color: #3b5998; /* Facebook color */
+}
+
+.example-2 .icon-content a[data-social="instagram"] .filled,
+.example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+  background: #833ab4;
+  background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+}
+
+.example-2 .icon-content a[data-social="phone"] .filled,
+.example-2 .icon-content a[data-social="phone"] ~ .tooltip {
+  background-color: #34b7f1; /* Phone color */
+}
+
+.example-2 .icon-content a[data-social="gmail"] .filled,
+.example-2 .icon-content a[data-social="gmail"] ~ .tooltip {
+  background-color: #ea4335; /* Gmail color */
+}
+
+.example-2 .icon-content a[data-social="tiktok"] .filled,
+.example-2 .icon-content a[data-social="tiktok"] ~ .tooltip {
+  background: linear-gradient(to right bottom, #00f2ea, #fe2c55, #010101);
+}
+
+/* Unique CTA button styles */
+.cta-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: white;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Background animation */
+.cta-btn::after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #23242a;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+.cta-btn:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+/* Text styles */
+.cta-btn-text {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 25px;
+  color: #333;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for text */
+.cta-btn:hover .cta-btn-text {
+  color: white;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+/* Text animation */
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.glasseffect {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgb(49, 49, 55, 0.2);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* For Chrome, Safari, and Edge */
+.au-fost::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  background-color: transparent; /* Transparent background for the scrollbar */
+}
+
+.au-fost::-webkit-scrollbar-thumb {
+  background-color: #444; /* Dark color for the scrollbar thumb */
+  border-radius: 10px; /* Round edges of the scrollbar thumb */
+  border: 2px solid transparent; /* Transparent border to add some space around the thumb */
+  background-clip: content-box; /* Makes the thumb appear inset */
+}
+
+.au-fost::-webkit-scrollbar-thumb:hover {
+  background-color: #333; /* Darker color on hover */
+}
+
+.au-fost::-webkit-scrollbar-track {
+  background-color: transparent; /* Transparent background for the track */
+  border-radius: 10px; /* Round edges of the track */
+}
+
+/* For Firefox */
+.au-fost {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: #444 transparent; /* Dark thumb and transparent track for Firefox */
+}
+
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  background-color: transparent; /* Transparent background for the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #444; /* Dark color for the scrollbar thumb */
+  border-radius: 10px; /* Round edges of the scrollbar thumb */
+  border: 2px solid transparent; /* Transparent border to add some space around the thumb */
+  background-clip: content-box; /* Makes the thumb appear inset */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #333; /* Darker color on hover */
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Transparent background for the track */
+  border-radius: 10px; /* Round edges of the track */
 }
