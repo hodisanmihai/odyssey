@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image"; // Import Image component from Next.js
 
 // Define an interface for the image object
 interface GalleryImage {
@@ -72,9 +73,12 @@ const Gallery = () => {
             {/* Main displayed image */}
             <div className="w-full md:w-1/2 h-full flex items-center justify-center mb-8 md:mb-0">
               <div className="w-full md:w-[90%] aspect-video md:h-[90%] bg-gradient-to-br from-[#2E3031] to-[#292B2D] shadow-[10px_10px_10px_8px_rgba(0,0,0,0.25)] rounded-lg overflow-hidden flex items-center justify-center border-2 border-[#333] relative">
-                <img
+                <Image
                   src={displayedImage.src}
                   alt={displayedImage.alt}
+                  layout="intrinsic" // Adjusts image based on its natural size
+                  width={1200} // Width of the image, adjust based on your requirements
+                  height={800} // Height of the image, adjust based on your requirements
                   className={`w-full h-full object-cover transition-opacity duration-300 ease-in-out ${
                     isAnimating ? "opacity-0" : "opacity-100"
                   }`}
@@ -96,9 +100,12 @@ const Gallery = () => {
                     onClick={() => handleImageClick(image)}
                   >
                     <div className="w-full h-full overflow-hidden">
-                      <img
+                      <Image
                         src={image.src}
                         alt={image.alt}
+                        layout="intrinsic"
+                        width={400}
+                        height={400}
                         className="w-full h-full object-cover border-2 border-[#333] rounded-md"
                       />
                     </div>

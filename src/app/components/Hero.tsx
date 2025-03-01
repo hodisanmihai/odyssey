@@ -8,7 +8,6 @@ import {
   faInstagram,
   faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
-import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
