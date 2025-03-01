@@ -12,7 +12,7 @@ interface GalleryImage {
 
 const Gallery = () => {
   // Sample image array with proper typing
-  const [images, setImages] = useState<GalleryImage[]>([
+  const [images] = useState<GalleryImage[]>([
     { id: 1, src: "/assets/parkinglot.jpg", alt: "Gallery Image 1" },
     { id: 2, src: "/assets/parkinglot.jpg", alt: "Gallery Image 2" },
     { id: 3, src: "/assets/parkinglot.jpg", alt: "Gallery Image 3" },
