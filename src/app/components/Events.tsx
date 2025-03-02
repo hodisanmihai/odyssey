@@ -67,7 +67,7 @@ const Events = () => {
                   </header>
                   <p className="mb-6">{card.desc}</p>
                   <Link
-                    href="./form"
+                    href="/form"
                     className="px-6 py-3 rounded-full bg-white text-[#333] self-center sm:self-start transition-colors duration-300 ease-in-out hover:bg-gray-200"
                   >
                     Inscrie-te
