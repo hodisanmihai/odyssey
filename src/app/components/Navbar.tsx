@@ -71,16 +71,16 @@ const Navbar = () => {
             transition={{ duration: 0.3 }}
             className="fixed inset-0 w-full h-screen bg-black/95 flex flex-col justify-center items-center gap-6 text-white text-lg font-bold md:hidden z-20"
           >
-            <Link href="/About" onClick={() => setIsOpen(false)}>
+            <Link href="#about" onClick={() => setIsOpen(false)}>
               About
             </Link>
-            <Link href="/Events" onClick={() => setIsOpen(false)}>
+            <Link href="#events" onClick={() => setIsOpen(false)}>
               Evenimente
             </Link>
-            <Link href="/Gallery" onClick={() => setIsOpen(false)}>
+            <Link href="#gallery" onClick={() => setIsOpen(false)}>
               Galerie
             </Link>
-            <Link href="/Contact" onClick={() => setIsOpen(false)}>
+            <Link href="#contact" onClick={() => setIsOpen(false)}>
               Contact
             </Link>
           </motion.div>
