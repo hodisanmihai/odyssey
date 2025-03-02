@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 
 const uremazaCard = [
   {
@@ -40,7 +41,10 @@ const auFost = [
 
 const Events = () => {
   return (
-    <div className=" w-full md:h-[800px] h-auto md:pt-0 pt-12 md:pb-0 pb-12 bg-[#23242A] flex items-center justify-center">
+    <div
+      id="events"
+      className=" w-full md:h-[800px] h-auto md:pt-0 pt-12 md:pb-0 pb-12 bg-[#23242A] flex items-center justify-center"
+    >
       <div className="hidden md:block w-[90%] md:w-[80%] h-full  flex-col items-center justify-start second-font">
         <h1 className="w-full h-auto flex items-center justify-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white py-6 md:py-4">
           Evenimente
@@ -62,9 +66,12 @@ const Events = () => {
                     <p>{card.date}</p>
                   </header>
                   <p className="mb-6">{card.desc}</p>
-                  <button className="px-6 py-3 rounded-full bg-white text-[#333] self-center sm:self-start transition-colors duration-300 ease-in-out hover:bg-gray-200">
+                  <Link
+                    href="./form"
+                    className="px-6 py-3 rounded-full bg-white text-[#333] self-center sm:self-start transition-colors duration-300 ease-in-out hover:bg-gray-200"
+                  >
                     Inscrie-te
-                  </button>
+                  </Link>
                 </div>
               ))}
             </div>
@@ -88,7 +95,7 @@ const Events = () => {
                     </div>
                     <div className="w-full sm:w-[40%] flex items-center justify-center">
                       <a
-                        href="#"
+                        href="#gallery"
                         className="px-6 py-3 rounded-full bg-white text-[#333] transition-colors duration-300 ease-in-out hover:bg-gray-200"
                       >
                         Vezi poze

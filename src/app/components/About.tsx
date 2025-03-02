@@ -39,7 +39,10 @@ const cardsData = [
 const About = () => {
   return (
     <div className="w-full md:h-[800px] md:pt-0 pt-12 md:pb-0 pb-6 bg-[#23242A] flex items-center justify-center">
-      <div className="w-[80%] h-full flex flex-col md:flex-row items-center justify-evenly second-font">
+      <div
+        id="about"
+        className="w-[80%] h-full flex flex-col md:flex-row items-center justify-evenly second-font"
+      >
         {/* Left Section (Title + Text) */}
         <div className="w-full md:w-1/3 h-auto flex flex-col items-center md:items-start justify-evenly text-center md:text-left">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white">

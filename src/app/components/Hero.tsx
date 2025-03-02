@@ -104,13 +104,13 @@ const Hero = () => {
           {/* Buttons Section */}
           <div className="w-full h-1/4 flex flex-col md:flex-row justify-evenly items-center second-font font-bold">
             <a
-              href="#"
+              href="#about"
               className="w-full md:w-1/4 h-1/2 border-white border-1 rounded-lg text-white flex items-center justify-center cta-btn mb-4 md:mb-0"
             >
               <h2 className="cta-btn-text">Afla mai multe</h2>
             </a>
             <a
-              href="#"
+              href="#events"
               className="w-full md:w-1/4 h-1/2 border-white border-1 rounded-lg text-white flex items-center justify-center cta-btn mb-4 md:mb-0"
             >
               <h2 className="cta-btn-text">Urmatorul Eveniment</h2>
