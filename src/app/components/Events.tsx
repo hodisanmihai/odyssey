@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
 
 const uremazaCard = [
   {
@@ -66,12 +65,12 @@ const Events = () => {
                     <p>{card.date}</p>
                   </header>
                   <p className="mb-6">{card.desc}</p>
-                  <Link
+                  <a
                     href="./form"
                     className="px-6 py-3 rounded-full bg-white text-[#333] self-center sm:self-start transition-colors duration-300 ease-in-out hover:bg-gray-200"
                   >
                     Inscrie-te
-                  </Link>
+                  </a>
                 </div>
               ))}
             </div>
