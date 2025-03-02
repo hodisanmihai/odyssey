@@ -113,7 +113,7 @@ const Hero = () => {
               href="#events"
               className="w-[90%] md:w-1/4 h-1/2 border-white border-1 rounded-lg text-white flex items-center justify-center cta-btn mb-6 md:mb-0"
             >
-              <h2 className="cta-btn-text">Urmatorul Eveniment</h2>
+              <h2 className="cta-btn-text text-nowrap">Urmatorul Eveniment</h2>
             </a>
             <div className="w-full md:w-1/4 h-1/2">
               <ul className="example-2 flex gap-6 h-full justify-center md:justify-start">
