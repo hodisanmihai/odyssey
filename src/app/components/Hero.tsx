@@ -49,7 +49,7 @@ const Hero = () => {
     : 0;
 
   return (
-    <div className="w-[100vw] h-auto overflow-x-hidden">
+    <div className="w-[100vw] h-auto overflow-x-hidden no-copy">
       {/* Hero Section */}
       <div className="w-full h-[100vh] overflow-x-hidden flex items-center justify-center">
         <div className="relative w-full h-[100vh] overflow-hidden">

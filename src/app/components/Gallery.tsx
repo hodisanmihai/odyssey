@@ -65,7 +65,7 @@ const Gallery = () => {
   return (
     <div
       id="gallery"
-      className="w-full md:h-[800px] h-auto md:pt-0 pt-12 md:pb-0 pb-12 bg-[#23212A] flex items-center justify-center"
+      className="w-full md:h-[800px] h-auto md:pt-0 pt-12 md:pb-0 pb-12 bg-[#23212A] flex items-center justify-center no-copy"
     >
       <div className="w-[90%] md:w-[80%] h-full flex flex-col items-center justify-start second-font">
         <h1 className="w-full h-auto flex items-center justify-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white py-6 md:py-4">

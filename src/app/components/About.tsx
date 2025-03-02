@@ -41,7 +41,7 @@ const About = () => {
     <div className="w-full md:h-[800px] md:pt-0 pt-12 md:pb-0 pb-6 bg-[#23242A] flex items-center justify-center">
       <div
         id="about"
-        className="w-[80%] h-full flex flex-col md:flex-row items-center justify-evenly second-font"
+        className="w-[80%] h-full flex flex-col md:flex-row items-center justify-evenly second-font no-copy"
       >
         {/* Left Section (Title + Text) */}
         <div className="w-full md:w-1/3 h-auto flex flex-col items-center md:items-start justify-evenly text-center md:text-left">

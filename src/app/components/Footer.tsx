@@ -5,6 +5,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer
+      className="no-copy"
       style={{
         backgroundColor: "#222222",
         color: "#ffffff",

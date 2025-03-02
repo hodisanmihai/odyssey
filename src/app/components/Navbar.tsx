@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full">
-      <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 w-[90%] h-16 rounded-full glasseffect flex items-center justify-between px-6 z-50">
+      <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 w-[90%] h-16 rounded-full glasseffect flex items-center justify-between px-6 z-50 no-copy">
         {/* Logo */}
         <div className="text-white text-2xl font-extrabold first-font">
           Odyssey
