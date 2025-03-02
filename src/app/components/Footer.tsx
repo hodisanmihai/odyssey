@@ -21,7 +21,7 @@ const Footer = () => {
       <div>
         <p>
           Created by{" "}
-          <a href="https://hm-design.com" style={{ color: "#0056b3" }}>
+          <a href="https://hm-design.ro" style={{ color: "#0056b3" }}>
             HM-Design
           </a>
         </p>

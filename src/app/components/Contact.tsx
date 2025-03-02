@@ -43,7 +43,7 @@ const Contact = () => {
                 <div className=" flex w-1/2 h-full flex-col justify-between items-center md:gap-0 gap-12">
                   <li className="icon-content w-[80px] h-[80px] md:w-[100px] md:h-[100px] bg-[#3b5998] rounded-full flex justify-center items-center">
                     <a
-                      href="https://www.facebook.com/nrgym.oradea"
+                      href="https://www.facebook.com/odysseymeets"
                       data-social="facebook"
                       className="icon-link flex justify-center items-center w-full h-full rounded-2xl text-6xl text-white"
                     >
@@ -53,13 +53,12 @@ const Contact = () => {
                         style={{ fontSize: "2.5rem" }}
                       />
                       <span className="filled"></span>
-                      <div className="tooltip">Follow us on Facebook</div>
                     </a>
                   </li>
 
                   <li className="icon-content w-[80px] h-[80px] md:w-[100px] md:h-[100px] bg-gradient-to-r from-[#833ab4] to-[#fcb045] rounded-full flex justify-center items-center">
                     <a
-                      href="https://www.instagram.com/nrgym.oradea"
+                      href="https://www.instagram.com/odysseymeets"
                       data-social="instagram"
                       className="icon-link flex justify-center items-center w-full h-full rounded-2xl text-6xl text-white"
                     >
@@ -69,7 +68,6 @@ const Contact = () => {
                         style={{ fontSize: "2.5rem" }}
                       />
                       <span className="filled"></span>
-                      <div className="tooltip">Follow us on Instagram</div>
                     </a>
                   </li>
                 </div>
@@ -91,7 +89,7 @@ const Contact = () => {
 
                   <li className="icon-content w-[80px] h-[80px] md:w-[100px] md:h-[100px] rounded-full flex justify-center items-center">
                     <a
-                      href="https://www.tiktok.com/@nrgym.oradea"
+                      href="mailto:odysseycarmeets@gmail.com"
                       data-social="gmail"
                       className="icon-link flex justify-center items-center w-full h-full rounded-2xl text-6xl text-white"
                     >

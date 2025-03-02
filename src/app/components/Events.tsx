@@ -131,7 +131,7 @@ const Events = () => {
                 <p className="mb-4">{card.desc}</p>
                 <Link
                   href="/form"
-                  className="px-4 py-2 rounded-full bg-white text-[#333] hover:bg-gray-200"
+                  className="px-4 py-2 rounded-full bg-white text-[#333] hover:bg-gray-200 text-center"
                 >
                   Inscrie-te
                 </Link>

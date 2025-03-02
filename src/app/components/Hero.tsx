@@ -105,13 +105,13 @@ const Hero = () => {
           <div className="w-full h-1/4 flex flex-col md:flex-row justify-evenly items-center second-font font-bold">
             <a
               href="#about"
-              className="w-full md:w-1/4 h-1/2 border-white border-1 rounded-lg text-white flex items-center justify-center cta-btn mb-4 md:mb-0"
+              className="w-full md:w-1/4 h-1/2 border-white border-1 rounded-lg text-white flex items-center justify-center cta-btn mb-6 md:mb-0"
             >
               <h2 className="cta-btn-text">Afla mai multe</h2>
             </a>
             <a
               href="#events"
-              className="w-full md:w-1/4 h-1/2 border-white border-1 rounded-lg text-white flex items-center justify-center cta-btn mb-4 md:mb-0"
+              className="w-full md:w-1/4 h-1/2 border-white border-1 rounded-lg text-white flex items-center justify-center cta-btn mb-6 md:mb-0"
             >
               <h2 className="cta-btn-text">Urmatorul Eveniment</h2>
             </a>
@@ -119,7 +119,7 @@ const Hero = () => {
               <ul className="example-2 flex gap-6 h-full justify-center md:justify-start">
                 <li className="icon-content w-1/4 aspect-square">
                   <a
-                    href="https://www.facebook.com/nrgym.oradea"
+                    href="https://www.facebook.com/odysseymeets"
                     data-social="facebook"
                     className="icon-link h-full rounded-lg text-6xl"
                   >
@@ -133,7 +133,7 @@ const Hero = () => {
                 </li>
                 <li className="icon-content w-1/4 aspect-square">
                   <a
-                    href="https://www.facebook.com/nrgym.oradea"
+                    href="https://www.instagram.com/odysseymeets/"
                     data-social="instagram"
                     className="icon-link h-full rounded-lg text-6xl"
                   >
@@ -147,7 +147,7 @@ const Hero = () => {
                 </li>
                 <li className="icon-content w-1/4 aspect-square">
                   <a
-                    href="https://www.facebook.com/nrgym.oradea"
+                    href="https://tiktok"
                     data-social="tiktok"
                     className="icon-link h-full rounded-lg text-6xl"
                   >
