@@ -148,7 +148,7 @@ const Events = () => {
                   <h3 className="font-extrabold">{event.title}</h3>
                   <p>{event.date}</p>
                   <a
-                    href="#"
+                    href="#gallery"
                     className="px-4 py-2 mt-2 rounded-full bg-white text-[#333] hover:bg-gray-200"
                   >
                     Vezi poze
